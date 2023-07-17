@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgb(227, 12, 8);
+    color: rgb(255, 254, 254);
+}
+
+.logo-item1{
+    height: 80px;
+    width: 150px;
+}
+.section{
+    background-color: #f8f2fb;
+
+}
+
+.section1{
+    background-color: white;
+    height: 90px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.section2{
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 30px 0px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+input[type = text]{
+    border: 1px solid #2c0264;
+}
+input[type = text]:focus{
+    color: #212529;
+    background-color:none;
+    border-color:black;
+    box-shadow: none;
+
+}
+#markItem{
+    display: none;
+    font-size: 25px;
+}
+.nav-item{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.nav-item .payment-item{
+    color: #4805a0;
+    font-size: 16px;
+    font-weight: 800;
+}
+.fa-circle-user{
+    font-size: 25px;  
+}
+::placeholder{
+    font-size: 15px;
+}
+.num-item{
+    border: 1px solid #2c0264;
+    background-color: transparent;
+    padding: 0px 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.button-item{
+    border: none;
+    border-radius: 10px;
+    background-color: #2c0264;
+    color: #fff;
+    padding: 7px;
+}
+.img-item{
+    width: 100%;
+    height: 300px;
+}
+.footer{
+    background-color: black;
+}
+.footer-img{
+    border-radius: 5px;
+}
+.para1{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.Prefer{
+    color: #4805a0;
+}
+.desi{
+    color: #ffffff;
+}
+.socail{
+    font-size: 26px;
+    transition: 2s;
+    cursor: pointer;
+}
+.socail:hover{
+    transform: rotate(360deg);
+}
+@media (min-width:320px) and (max-width:768px) {
+    .privacy-item{
+        font-size: 13px;
+    }
+    .socail{
+        font-size: 15px;
+    }
+    .list-item{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+@media (min-width:320px) and (max-width:567px){
+    .gender-item{
+        font-size: 10px;
+    }
+    .job{
+        font-size: 13px;
+    }
+    .rec{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgb(227, 12, 8);
+    color: rgb(255, 254, 254);
+}
+
+.logo-item1{
+    height: 80px;
+    width: 150px;
+}
+.section{
+    background-color: #f8f2fb;
+
+}
+.section1{
+    background-color: white;
+    height: 90px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.fa-bars{
+    font-size: 25px;
+}
+
+#markItem{
+    display: none;
+    font-size: 25px;
+}
+
+.nav-item{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+}
+.color-item{
+    color: black;
+    text-decoration: none;
+}
+
+.fa-circle-user{
+    font-size: 30px;  
+}
+.fa-bell{
+    font-size: 25px;
+}
+.nav-item .dash-item{
+    font-size: 30px;
+    color: #2e0466;
+}
+.section-item{
+    background-color: #f8f2fb;
+}
+.profile-item{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.user-item{
+    font-size: 80px;
+    background-color: rgba(192, 192, 192, 0.485);
+    border-radius: 100%;
+    color: #fff;
+    
+}
+.active{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #4805a02e;
+    color: #4805a0;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.active-item{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background-color:transparent;
+    color:rgb(85, 84, 84);
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.company-item{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.graphic-item{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.graphic{
+    border-right: 1px solid grey;
+}
+.graphic-item1{
+    border-right: 1px solid grey;
+    font-size: 30px;
+    font-weight: 600;
+    height: 140px;
+
+}
+.icon{
+    font-size: 25px;
+    color: silver;
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: black;
+}
+.footer-img{
+    border-radius: 5px;
+}
+.para1{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.Prefer{
+    color: #4805a0;
+}
+.desi{
+    color: #ffffff;
+}
+.socail{
+    font-size: 26px;
+    transition: 2s;
+    cursor: pointer;
+}
+.socail:hover{
+    transform: rotate(360deg);
+}
+@media (min-width:320px) and (max-width:768px) {
+    .privacy-item{
+        font-size: 13px;
+    }
+    .socail{
+        font-size: 15px;
+    }
+    .bg-element{
+        margin-left: 0px;
+    }
+    .list-item{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+   
+}
+@media (min-width:320px) and (max-width:567px){
+    .gender-item{
+        font-size: 10px;
+    }
+    .job{
+        font-size: 13px;
+    }
+    .rec{
+        font-size: 13px;
+    }
+    .item-wipro{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+}

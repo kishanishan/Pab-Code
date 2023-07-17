@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Project</title>
+	<!-- CSS LINK -->
+	<link rel="stylesheet" href="index.css" />
+	<!-- BOOTSTRAP LINK -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+	<!-- Header Section -->
+	<section class="section1">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-6 col-md-6  py-2">
+					<div class="logo-item">
+						<img src="pabjobs-logo.png" alt="logo" class="img-fluid logo-item1" />
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-lg-4 col-md-6 ">
+					<div class="navbar navbar-expand-lg navbar-light" role="navigation">
+						<button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class=" collapse navbar-collapse" id="navbarContent">
+							<div class="  d-lg-block d-md-none d-sm-none d-none text-center py-4">
+								<ul class=" nav navbar-nav d-flex">
+									<li class="nav-item"> <a href="" class="dropdown-toggle link-item nav-link ">Browse
+											Jobs</a></li>
+									<li class="nav-item text">
+										<a href="" class="dropdown-toggle link-item px-5 nav-link">Jobs</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Body section -->
+	<section class="section2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<div class="container-item mb-5">
+						<div class="header text-center">
+							<div class="head-item">
+								<h3 class="m-0">Create an account</h3>
+							</div>
+							<div class="para-item">
+								<p>It only a couple of minutes to get started!</p>
+							</div>
+						</div>
+						<div class="row px-2">
+							<div class="col-md-6">
+								<div class="btn-item1 ">
+									<button class="btn w-100 mt-2" id="loginBtn">
+										Login
+									</button>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="btn-item2 d-flex ">
+									<button class="btn w-100 mt-2 d-flex justify-content-around align-items-center"
+										id="singBtn">
+										<div>Sign Up</div>
+										<i class="fa-solid fa-check icon-item2 " id="signupCheck"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="row px-2">
+							<div class="col-md-12 ">
+								<div class="btn-item1">
+									<div class="  d-flex justify-content-around w-100 mt-2 p-2 border-item">
+										<div id="jobBtn">
+											<label for="jobCheck" class="job">Job Seeker</label>
+											<input type="radio" name="ans" id="jobCheck" class="text-end my-2 " checked>
+
+										</div>
+										<span class="right-item"></span>
+										<div id="recuiterBtn">
+											<label for="recruiterCheck" class="rec">Recruiters</label>
+											<input type="radio" name="ans" id="recruiterCheck" class="text-end my-2 ">
+
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+						<form action="#" class="px-2">
+							<div class="py-2">
+								<label for="name" id="fullName" class="py-1">Full Name</label>
+								<input type="text" id="name" class="form-control" placeholder="Enter your full name" />
+							</div>
+							<div class="py-2">
+								<label for="Email" class="py-1">Email ID</label>
+								<input type="text" id="Email" class="form-control" placeholder="Enter your Email ID" />
+							</div>
+							<div class="py-2">
+								<label for="psw" class="py-1">Password</label>
+								<div class="flex-item">
+									<input type="text" id="psw" class="form-control"
+										placeholder="Minimum 6 charecter" />
+									<i class="fa-solid fa-eye-slash"></i>
+								</div>
+							</div>
+							<div class="py-2">
+								<label for="number" class="py-1">Mobile Number</label>
+								<div class="d-flex">
+									<button class="num-item dropdown-toggle" data-bs-toggle="dropdown">
+										+91
+									</button>
+									<input type="text" id="number" class="form-control"
+										placeholder="Enter your mobile number" />
+								</div>
+							</div>
+							<div class="py-2">
+								<div id="gender" class="py-2">Gender</div>
+								<div class="row gender-item">
+									<div class="col-lg-2 col-md-2 col-3" id="genderOptions1">
+										<input type="radio" name="male" id="male" />
+										<label for="male">Male</label>
+									</div>
+									<div class="col-lg-3 col-md-2 col-4" id="genderOptions2">
+										<input type="radio" name="male" id="feMale" />
+										<label for="feMale">Female</label>
+									</div>
+									<div class="col-lg-5 col-md-8 col-5" id="genderOptions3">
+										<input type="radio" name="male" id="others" class="" />
+										<label for="others">Prefer not to say</label> <br />
+									</div>
+								</div>
+							</div>
+							<div class="py-3">
+								<i class="fa-solid fa-check icon-item"></i>
+								I would like to get letest job updates on Whatsapp
+							</div>
+							<p class="para m-0">
+								By clicking Register, you agree to the Terms and Conditions &
+								Privacy Policy of Pabjobs.com
+							</p>
+							<button class="register">Register Now</button>
+							<div class="row">
+								<div class="col-lg-12 d-lg-none d-md-block d-sm-block d-block py-1">
+									<div class="navbar">
+										<ul class="nav-item d-flex p-1">
+											<li class="nav-link">Already Registerd?</li>
+											<li class="nav-link text">
+												<span class="login"> Login</span> here
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-3 d-lg-block d-md-none d-none">
+					<div class="side-item">
+						<div class="card-container">
+							<img src="./seeker.jpg" alt="img" class="img-fluid jobimg" id="imgchange" />
+						</div>
+						<div class="item2 mt-4">
+							<div class="my-2">
+								<i class="fa-solid fa-check icon-item1"></i>
+								<span class="profile-item">Build your profile and let recuiters find you</span>
+							</div>
+							<div class="my-2">
+								<i class="fa-solid fa-check icon-item1"></i>
+								<span class="profile-item">Get job posting delivered right to your email</span>
+							</div>
+							<div class="my-2">
+								<i class="fa-solid fa-check icon-item1"></i>
+								<span class="profile-item">Find a job and grow your career</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer section -->
+	<footer class="footer">
+		<div class="container p-4">
+			<div class="row pb-4" style="border-bottom: 1px solid white">
+				<div class="col-lg-3 col-md-6 text-white">
+					<img src="pab bottom-logo.jpg" alt="img" class="img-fluid w-50 footer-img" />
+					<p class="para1 my-2">
+						We provide a direct access to the walk-in apportunities available
+						on the site. result can be filterred on work experience. venue,
+						from location, employer type, and data range.
+					</p>
+					<p class="mt-3">Toll Fre Number:</p>
+					<i class="fa-solid fa-phone"></i>
+					<span class="mx-2">1800 833 9448</span>
+				</div>
+				<div class="col-lg-3 col-md-6 text-white">
+					<h3 class="mt-4 my-3">For Candidates</h3>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i>
+						<span>Candidate Profile</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>My Resume</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Applied Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Job Alert</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i>
+						<span>Change Password</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-white">
+					<h3 class="mt-4 my-3">Jobs</h3>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>All Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Company Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Category Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i>
+						<span>Locational Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i>
+						<span>Destignation Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Skill Jobs</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-white">
+					<h3 class="mt-4 my-3">Browse Jobs</h3>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Companies</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Browse Jobs</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Jobs</span>
+					</div>
+					<h3 class="mt-4 my-3">Information</h3>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i>
+						<span>Terms & Conditions</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i>
+						<span>Privacy Policy</span>
+					</div>
+					<div class="my-2">
+						<i class="fa-solid fa-angle-right"></i> <span>Fraud Alert</span>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4 privacy-item">
+				<div class="col-lg-4 col-md-4 text-white p-1">
+					<p>
+						All rigths reserved <i class="fa-solid fa-copyright"></i> 2022
+						PABjobs
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 p-1">
+					<p class="desi">
+						Designed by
+						<a href="https://www.perfextechnologies.com/" class="Prefer">@PerfexTechnologies</a>
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 text-white">
+					<i class="fa-brands fa-linkedin socail p-1"></i>
+					<i class="fa-brands fa-instagram socail p-1"></i>
+					<i class="fa-brands fa-facebook socail p-1"></i>
+					<i class="fa-brands fa-twitter socail p-1"></i>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JAVASCRIPT LINK -->
+	<script src="index.js"></script>
+</body>
+
+</html>

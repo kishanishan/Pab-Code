@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgb(227, 12, 8);
+    color: rgb(255, 254, 254);
+}
+
+.logo-item1{
+    height: 80px;
+    width: 150px;
+}
+.section{
+    background-color: #f8f2fb;
+
+}
+.section1{
+    background-color: white;
+    height: 90px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.fa-bars{
+    font-size: 25px;
+}
+
+#markItem{
+    display: none;
+    font-size: 25px;
+}
+
+.nav-item{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+}
+
+
+.fa-circle-user{
+    font-size: 30px;  
+}
+.fa-bell{
+    font-size: 25px;
+}
+.nav-item .dash-item{
+    font-size: 20px;
+    color: #2e0466;
+}
+.section-item{
+    background-color: #f8f2fb;
+}
+.active{
+    background-color: #2c0264;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.active-item{
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.popcorn{
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    background-color: #fff;
+    border-radius: 10px;
+
+
+}
+.user-item .user{
+  font-size: 30px;
+  background-color: rgba(130, 128, 128, 0.516);
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+    
+}
+.monthly-item{
+    background-color: #fff;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    border-radius: 10px;
+}
+.text-bold{
+    font-weight: 700;
+}
+.excel-item{
+    background-color: #fff;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    border-radius: 10px;
+    height: 80px;
+
+}
+.download-item{
+    background-color: #ea4235;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+}
+.price{
+    font-weight: 800;
+    font-size: 20px;
+}
+.rec-item{
+    background-color: #fabc04;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+}
+.message{
+    background-color: #34a853;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+}
+.pen{
+    background-color: #4385f5;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+}
+.use-item{
+    color: #2c0264;
+}
+.recruiter{
+    background-color: #f8eefd;
+    border-radius: 10px;
+
+
+}
+.rec{
+    color: #2c0264;
+
+}
+.admin{
+    background-color: #fff;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    border: none;
+
+}
+.profile-item{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+
+}
+.emp-item{
+    background-color: #2c0264;
+    border-radius: 10px;
+    color: white;
+}
+.login{
+    background-color: transparent;
+    border: 1px solid #2c0264;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    padding: 4px 20px;
+
+}
+.use .user-item{
+    background-color: silver;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+#userId{
+    color: #2c0264;
+}
+
+
+
+
+
+.footer{
+    background-color: black;
+}
+.footer-img{
+    border-radius: 5px;
+}
+.para1{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.Prefer{
+    color: #4805a0;
+}
+.desi{
+    color: #ffffff;
+}
+.socail{
+    font-size: 26px;
+    transition: 2s;
+    cursor: pointer;
+}
+.socail:hover{
+    transform: rotate(360deg);
+}
+@media (min-width:320px) and (max-width:768px) {
+    .privacy-item{
+        font-size: 13px;
+    }
+    .socail{
+        font-size: 15px;
+    }
+    .bg-element{
+        margin-left: 0px;
+    }
+    .list-item{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+   
+}
+@media (min-width:320px) and (max-width:567px){
+    .gender-item{
+        font-size: 10px;
+    }
+    .job{
+        font-size: 13px;
+    }
+    .rec{
+        font-size: 13px;
+    }
+    .item-wipro{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+}

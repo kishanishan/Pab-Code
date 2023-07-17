@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="profile.css" />
+    <!-- BOOTSTRAP LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <section class="section1">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-2 col-md-6 col-6 text-center  py-2">
+                    <div class="logo-item">
+                        <img src="pabjobs-logo.png" alt="logo" class="img-fluid logo-item1" />
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-6 col-6 align-items-center align-self-center text-center">
+                    <i class="fa-solid fa-bars d-lg-none" id="barItem"></i>
+                    <i class="fa-solid fa-xmark " id="markItem"></i>
+                </div>
+                <div class="col-lg-7 col-md-9 text-center align-items-center align-self-center list-item mt-1 "
+                    id="listItem">
+                    <ul class="row  my-4 ">
+                        <li class="col-md-2 col-6  nav-item">
+                            <a href="http://127.0.0.1:5500/home.html" class=" link-item nav-link ">Home</a>
+
+                        </li>
+                        <li class="col-md-2 col-6 nav-item">
+                            <a href="http://127.0.0.1:5500/browse.html"
+                                class="dropdown-toggle link-item nav-link browse " data-bs-toggle="dropdown"
+                                id="browseItem" onclick="broseBtn()">Browse
+                                Jobs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Experience</a></li>
+                                <li><a class="dropdown-item" href="#">Location</a></li>
+                                <li><a class="dropdown-item" href="#">Salary</a></li>
+                                <li><a class="dropdown-item" href="#">Industry</a></li>
+                                <li><a class="dropdown-item" href="#">Destignation</a></li>
+                                <li><a class="dropdown-item" href="#">Education</a></li>
+                                <li><a class="dropdown-item" href="#">Skills</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="col-md-2 col-6  nav-item">
+                            <a href="http://127.0.0.1:5500/job.html" class="dropdown-toggle link-item px-4 nav-link"
+                                onclick="jobBtn()">Jobs</a>
+
+                        </li>
+                        <li class="col-md-2 col-6  nav-item">
+                            <a href="" class="dropdown-toggle link-item px-4 text-center nav-link">Service</a>
+
+                        </li>
+                        <li class="col-md-2 col-6  nav-item">
+                            <a href="http://127.0.0.1:5500/payment.html" class="dropdown-toggle link-item px-3 nav-link"
+                                id="payItem">Payment</a>
+
+                        </li>
+                        <li class="col-md-1 col-3  nav-item">
+                            <i class=" col-lg-1 fa-regular fa-bell px-3"></i>
+
+                        </li>
+                        <li class="col-md-1 col-3 nav-item  ">
+                            <i class="fa-solid fa-circle-user dropdown-toggle px-3" id="userId" onclick="userBtn()"></i>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-lg-1">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROFILE  -->
+    <section class="container-item" id="containerItem">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3 my-5">
+                    <div class="profile-item">
+                        <div class="icon-item text-center">
+                            <i class="fa-solid fa-user user-item p-5 mt-3"></i>
+                        </div>
+                        <div class="button-items ">
+                            <button class="active mt-4">Candidate Profile</button>
+                            <button class="active-item mt-2" onclick="resumeBtn()">Resume</button>
+                            <button class="active-item mt-2" onclick="appBtn()">Applied Jobs</button>
+                            <button class="active-item mt-2" onclick="alertBtn()">job Alerts</button>
+                            <button class="active-item mt-2" onclick="saveBtn()">Saved Jobs</button>
+                            <button class="active-item mt-2" onclick="changeBtn()">Change Password</button>
+                            <button class="active-item mt-2"><a href="http://127.0.0.1:5500/login.html" class="color-item">Log Out</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 my-5">
+                    <div class="info-item p-3">
+                        <div class="py-3">
+                            <h4 class="basic-item">Basic Information</h4>
+                        </div>
+                        <div class="py-2">
+                            <label for="name"  class="py-1"> Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" />
+                        </div>
+                        <div class="py-3">
+                            <p class="ex-item">Experience</p>
+                            <input type="radio" name="fresh" id="freshItem" class="mx-4"> Fresher
+                            <input type="radio" name="exp" id="experienceItem" class="mx-4"> Experience
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="state">State</label>
+                                <div class="same-item">
+                                    <input type="text" class="form-control" id="state" placeholder="Select your state">
+                                    <i class="fa-solid fa-chevron-down align-self-center px-3"></i>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="state">Current Location</label>
+                                <div class="same-item">
+                                    <input type="text" class="form-control" id="state" placeholder="Select your state">
+                                    <i class="fa-solid fa-chevron-down align-self-center px-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="my-3">
+                                    <label for="number">Mobile Number</label>
+                                    <input type="text" name="num" id="number" placeholder="Enter your mobile number"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="my-3">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" placeholder="Enter your Email address"
+                                        class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="update-button">
+                            <button class="btn-update">Update Details</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    <!-- RESUME -->
+    <section class="resume-item" id="resumeItem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"><i class="fa-solid fa-arrow-left" onclick="backBtn()"></i></div>
+                <div class="col-lg-3 my-5">
+                    <div class="pro-item p-3" onclick="profileBtn()">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="icon-item text-center">
+                                    <i class="fa-solid fa-user user-item1 p-4 "></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <h3>P.KISHAN</h3>
+                                <p class="m-0">Web Developer</p>
+                                <p>at Perfex Technologies</p>
+                            </div>
+                        </div>
+                        <div class="details py-3">
+                            <div>
+                                <i class="fa-solid fa-phone"></i><span class="pro"> 9876543210</span><i
+                                    class="fa-solid fa-check check"></i>
+
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-envelope"></i><span class="pro"> kishan1412@gmail.com</span><i
+                                    class="fa-solid fa-check check"></i>
+
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-briefcase"></i><span class="pro"> 3 Months</span>
+
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i><span class="pro"> Hyderabad</span>
+
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-briefcase"></i> <span class="pro"> 3,50,000 - 4,20,000</span>
+
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-calendar-days"></i><span class="pro"> 15 Days notice period</span>
+
+                            </div>
+                        </div>
+                        <span class="text"> Your profile update</span>
+                        <div class="row my-2">
+                            <div class="col-lg-4 col-md-6 my-2">
+                                <button class="num8">82%</button>
+                            </div>
+                            <div class="col-lg-8 col-md-6">
+                                <p class="missing-item m-0">Add 2 missing details</p>
+                                <span class="last-item1 text-end">Profile last updated - 30Jun, 2023</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="profile-sumary sticky-top">
+                        <button class="profile-button" > <a href="#resumeElement" class="color-item">Resume</a> </button>
+                        <button class="profile-button"> <a href="#proElement" class="color-item">Profile Summary</a> </button>
+                        <button class="profile-button"> <a href="" class="color-item">Resume Headline</a> </button>
+                        <button class="profile-button"> <a href="#keyElement" class="color-item">Key Skills</a> </button>
+                        <button class="profile-button"> <a href="#employerElement" class="color-item">Employment</a> </button>
+                        <button class="profile-button"> <a href="#educationElement" class="color-item">Education</a> </button>
+                        <button class="profile-button"> <a href="#projectElement" class="color-item">Project</a> </button>
+                        <button class="profile-button"> <a href="#acoElement" class="color-item">Accomplishment</a></button>
+                        <button class="profile-button"> <a href="#careerElemet" class="color-item">Desired Career Profile</a></button>
+                        <button class="profile-button"> <a href="#personalElement" class="color-item">Personal Details</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-7 my-5">
+                    <div class="resume-add-item p-3">
+                        <h4 class="sub-resume pb-4" id="resumeElement">Resume <span class="sub-resume-item">(Recuiters generally do not
+                                look at profile without resume.)</span></h4>
+                        <div class="upload-resume text-center p-5 my-4">
+                            <button class="btn-upload">Upload Resume <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                            </button>
+
+                        </div>
+                        <div class="text-center support">Supported Formats: doc, docx, rtf, pdf,upto 2 MB</div>
+
+                    </div>
+                    <div class="headline mt-4 p-3">
+                        <h4 class="resume-headline d-flex justify-content-between pb-4">Resume Headline <span><i
+                                    class="fa-regular fa-pen-to-square"></i></span></h4>
+                        <p>Web Developer currently living in Hyderabad</p>
+                    </div>
+                    <div class="headline mt-4 p-3" id="proElement">
+                        <h4 class="resume-headline d-flex justify-content-between pb-4">Profile Summary <span><i
+                                    class="fa-regular fa-pen-to-square"></i></span></h4>
+                        <p>Innovative Front End Developer with 6 + months of experience in building and maintaining
+                            responsive websites. using HTML, CSS, Bootstrap and JavaScript . Graduated from MNR Degree
+                            College in B.com(Computers).</p>
+                    </div>
+                    <div class="headline mt-4 p-3" id="keyElement">
+                        <h4 class="resume-headline d-flex justify-content-between pb-4">Key Skills <span><i
+                                    class="fa-regular fa-pen-to-square"></i></span></h4>
+                        <div class="skill-btn my-4">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mt-2">
+                                    <button class="skill-item">HTML</button>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mt-2">
+                                    <button class="skill-item">CSS</button>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 mt-2">
+                                    <button class="skill-item">BOOTSTRAP</button>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 mt-2">
+                                    <button class="skill-item">JAVASCRIPT</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline mt-4 p-3" id="employerElement">
+                        <h4 class="sub-resume pb-4">Employment <span class="sub-resume-item">(Enter your current and
+                                previous employement details)</span></h4>
+                        <div class="row py-3">
+                            <div class="col-lg-8 right-item">
+                                <h4>Web Developer</h4>
+                                <p class="m-0 company">Perfex Technologies</p>
+                                <p class="m-0 company">Full-time | May 2022 to Present (1 year 3 months)</p>
+                                <p class=" company">15 Days Notice Period</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="plus my-5 ">+ Add Employment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline mt-4 p-3" id="educationElement">
+                        <h4 class="sub-resume pb-4">Education <span class="sub-resume-item">(Enter your qualification
+                                details)</span></h4>
+                        <div class="row ">
+                            <div class="col-lg-8 right-item ">
+                                <p class=" company mt-4">Add class X | Add class XII | Add graduation/diploma</p>
+                                <p class=" company">Add masters/post-graduation | Add doctorate/Phd</p>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="plus my-5 ">+ Add Education</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline mt-4 p-3" id="projectElement">
+                        <h4 class="sub-resume pb-4">Projects</h4>
+                        <div class="row ">
+                            <div class="col-lg-8 right-item ">
+                                <p class=" company mt-5">(Add details about projects you have done)</p>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="plus my-5 ">+ Add Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline mt-4 p-4" id="acoElement">
+                        <h4 class="sub-resume pb-4">Accomplishment</h4>
+                        <div class="row  work-item">
+                            <div class="col-lg-8 my-2 ">
+                                <h4 class="m-0">Work sample</h4>
+                                <p class="  company ">Add link to your projects(e.g. Github link etc.).</p>
+
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <i class="fa-regular fa-pen-to-square pt-3 "></i>
+                            </div>
+                        </div>
+                        <div class="row  work-item">
+                            <div class="col-lg-8 my-2 ">
+                                <h4 class="m-0">White paper / Research publication</h4>
+                                <p class="  company ">Add link to your online publications.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <i class="fa-regular fa-pen-to-square pt-3 "></i>
+                            </div>
+                        </div>
+                        <div class="row  work-item">
+                            <div class="col-lg-8 my-2 ">
+                                <h4 class="m-0">Presentation</h4>
+                                <p class="  company ">Add link to your Presentations</p>
+
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <i class="fa-regular fa-pen-to-square pt-3 "></i>
+                            </div>
+                        </div>
+                        <div class="row  work-item">
+                            <div class="col-lg-8 my-2 ">
+                                <h4 class="m-0">Petent</h4>
+                                <p class="  company ">Add details of patents you have filed.</p>
+
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <i class="fa-regular fa-pen-to-square pt-3 "></i>
+                            </div>
+                        </div>
+                        <div class="row  work-item">
+                            <div class="col-lg-8 my-2 ">
+                                <h4 class="m-0">Certification</h4>
+                                <p class="  company "> Add details of Certification you have achived/completed</p>
+
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <i class="fa-regular fa-pen-to-square pt-3 "></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline mt-4 p-3" id="careerElemet">
+                        <div class="row sub-resume">
+                            <div class="col-lg-8">
+                                <h4 class=" pb-4">Desired Career Profile</h4>
+                            </div>
+                            <div class="col-lg-4 text-end">
+                                <i class="fa-regular fa-pen-to-square pt-3 "></i>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-lg-5 right-item1 ">
+                                <div class="my-4">
+                                    <h4 class="m-0">Desired Industry</h4>
+                                    <p class="  company ">IT services & Consulting</p>
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="m-0">Designation</h4>
+                                    <p class="  company ">Wed Developer</p>
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="m-0">Desired Shift</h4>
+                                    <p class="  company ">Day/Night</p>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-7 ">
+                                <div class="my-4 px-5">
+                                    <h4 class="m-0">Prefered Location</h4>
+                                    <p class="  company ">Hyderabad</p>
+                                </div>
+                                <div class="my-4 px-5">
+                                    <h4 class="m-0">Expected CTC</h4>
+                                    <p class="  company ">5,00,000 - 7,00,000</p>
+                                </div>
+                                <div class="my-4 px-5">
+                                    <h4 class="m-0">Employement Type</h4>
+                                    <p class="  company ">Full Time</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headline mt-4 p-3" id="personalElement">
+                        <div class="sub-resume">
+                            <h4 class=" pb-4">Personal Details</h4>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-lg-5 right-item1 ">
+                                <div class="my-4">
+                                    <h4 class="m-0">Date Of Birth </h4>
+                                    <p class="  company ">14 December 1999</p>
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="m-0">Age </h4>
+                                    <p class="  company ">23</p>
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="m-0">Gender</h4>
+                                    <p class="  company ">Male</p>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-7 ">
+                                <div class="my-4 px-5">
+                                    <h4 class="m-0">Marital Status</h4>
+                                    <p class="  company ">Single</p>
+                                </div>
+                                <div class="my-4 px-5">
+                                    <h4 class="m-0">Languages</h4>
+                                    <p class="  company ">Telugu, Hindi, English</p>
+                                </div>
+                                <div class="my-4 px-5">
+                                    <h4 class="m-0">Address</h4>
+                                    <p class="  company ">Gachibowli, Hyderabad, Telangana-500042</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        </div>
+    </section>
+    <!-- APPLIED JOBS -->
+    <section id="appliedItem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"><i class="fa-solid fa-arrow-left" onclick="backforwardBtn()"></i></div>
+
+                <div class="col-lg-3 my-5">
+                    <div class="profile-item ">
+                        <div class="icon-item text-center">
+                            <i class="fa-solid fa-user user-item p-5 mt-3"></i>
+                        </div>
+                        <div class="button-items ">
+                            <button class="active-item mt-4" onclick="proBtn()">Candidate Profile</button>
+                            <button class="active-item mt-2" onclick="resumeBtn()">Resume</button>
+                            <button class="active mt-2" onclick="appBtn()">Applied Jobs</button>
+                            <button class="active-item mt-2" onclick="alertBtn()">job Alerts</button>
+                            <button class="active-item mt-2" onclick="saveBtn()">Saved Jobs</button>
+                            <button class="active-item mt-2" onclick="changeBtn()">Change Password</button>
+                            <button class="active-item mt-2">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 my-5">
+                    <div class="applied-job-item">
+                        <div class="two-item my-2">
+                            <h4>2 Applied Jobs Found</h4>
+                        </div>
+                        <div class="bg-element">
+
+                            <div class="angel-item">
+                                <div class="d-flex flex-row row">
+                                    <div class="wipro-item item-wipro col-md-6 mt-2">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <img src="data:image/png;base64,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"
+                                                    alt="img" class=" angel-img" id="imgElement">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <p class="graphics-item m-0" style="font-size: 20px;">Graphic
+                                                    Designer
+                                                </p>
+                                                <p class="m-0" id="angelItem">Angel Broking</p>
+                                                <p class="m-0 Show">Show more jobs in the company</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="wipro-item col-md-6 mt-2">
+                                        <div>
+                                            <p class="graphics-item m-0" style="font-size: 20px;">4.5 - 6 LPA </p>
+                                            <p class="m-0"><i class="fa-solid fa-location-dot"></i> Hyderabad /
+                                                Secunderabad , Telengana</p>
+                                            <p class="m-0"><i class="fa-solid fa-briefcase"></i> 1 - 3 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-row row">
+                                    <div class="col-md-1"></div>
+                                    <div class="post col-md-5">
+                                        <p class="m-0">Posted: Few Hours Ago</p>
+                                        <p class="m-0">Openings:1</p>
+                                        <p class="m-0">Job Application:580</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="now-item" id="applyItem" onclick="applyBtn()">Applied</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bg-element my-5">
+
+                            <div class="angel-item">
+                                <div class="d-flex flex-row row">
+                                    <div class="wipro-item item-wipro col-md-6 mt-2">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cqbXayQ5q6evF0JPq49n5TZcvLHt83MlWA&usqp=CAU"
+                                                    alt="img" class=" angel-img" id="imgElement">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <p class="graphics-item m-0" style="font-size: 20px;">Graphic
+                                                    Designer
+                                                </p>
+                                                <p class="m-0" id="angelItem">Wipro</p>
+                                                <p class="m-0 Show">Show more jobs in the company</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="wipro-item col-md-6 mt-2">
+                                        <div>
+                                            <p class="graphics-item m-0" style="font-size: 20px;">5-10 LPA </p>
+                                            <p class="m-0"><i class="fa-solid fa-location-dot"></i> Hyderabad /
+                                                Secunderabad , Telengana</p>
+                                            <p class="m-0"><i class="fa-solid fa-briefcase"></i> 1 - 3 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-row row">
+                                    <div class="col-md-1"></div>
+                                    <div class="post col-md-5">
+                                        <p class="m-0">Posted: Few Hours Ago</p>
+                                        <p class="m-0">Openings:1</p>
+                                        <p class="m-0">Job Application:580</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="now-item" id="applyItem" onclick="applyBtn()">Applied</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    <!-- JOB ALERTS -->
+    <section id="alertItem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"><i class="fa-solid fa-arrow-left" onclick="backforwardToBtn()"></i></div>
+
+
+                <div class="col-lg-3 my-5">
+                    <div class="profile-item">
+                        <div class="icon-item text-center">
+                            <i class="fa-solid fa-user user-item p-5 mt-3"></i>
+                        </div>
+                        <div class="button-items ">
+                            <button class="active-item mt-4" onclick="proBtn()">Candidate Profile</button>
+                            <button class="active-item mt-2" onclick="resumeBtn()">Resume</button>
+                            <button class="active-item mt-2" onclick="appBtn()">Applied Jobs</button>
+                            <button class="active mt-2" onclick="alertBtn()">job Alerts</button>
+                            <button class="active-item mt-2" onclick="saveBtn()">Saved Jobs</button>
+                            <button class="active-item mt-2" onclick="changeBtn()">Change Password</button>
+                            <button class="active-item mt-2">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 my-5">
+                    <div class="job-alert">
+                        <div class="d-flex justify-content-between pb-3"
+                            style="border-bottom: 2px solid rgba(128, 128, 128, 0.232); ">
+                            <h4>Job Alert</h4>
+                            <div>
+                                <span class="sort-item">Sort</span>
+                                <button class="last-item">Last 3 Days<i class="fa-solid fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="not-item text-center">
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp7saPQdCeebEbEDFqgIX3Uuxv-UdxY-TzO8fCooVR_yh4vfqk"
+                                alt="img" class="img-fluid">
+                            <h2 class="no-item">No Application Found</h2>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    <!-- SAVED JOBS -->
+    <section id="savedItem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"><i class="fa-solid fa-arrow-left" onclick="backforwardToItemBtn()"></i></div>
+                <div class="col-lg-3 my-5">
+                    <div class="profile-item">
+                        <div class="icon-item text-center">
+                            <i class="fa-solid fa-user user-item p-5 mt-3"></i>
+                        </div>
+                        <div class="button-items ">
+                            <button class="active-item mt-4">Candidate Profile</button>
+                            <button class="active-item mt-2" onclick="resumeBtn()">Resume</button>
+                            <button class="active-item mt-2" onclick="appBtn()">Applied Jobs</button>
+                            <button class="active-item mt-2" onclick="alertBtn()">job Alerts</button>
+                            <button class="active mt-2" onclick="saveBtn()">Saved Jobs</button>
+                            <button class="active-item mt-2" onclick="changeBtn()">Change Password</button>
+                            <button class="active-item mt-2">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 my-5">
+                    <div class="applied-job-item">
+                        <div class="d-flex justify-content-between pb-3"
+                            style="border-bottom: 2px solid rgba(128, 128, 128, 0.232); ">
+                            <h4>Job Alert</h4>
+                            <div>
+                                <span class="sort-item">Sort</span>
+                                <button class="last-item">Last 3 Days<i class="fa-solid fa-chevron-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="bg-element">
+
+                            <div class="angel-item">
+                                <div class="d-flex flex-row row">
+                                    <div class="wipro-item item-wipro col-md-6 mt-2">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cqbXayQ5q6evF0JPq49n5TZcvLHt83MlWA&usqp=CAU"
+                                                    alt="img" class=" angel-img" id="imgElement">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <p class="graphics-item m-0" style="font-size: 20px;">Graphic
+                                                    Designer
+                                                </p>
+                                                <p class="m-0" id="angelItem">Wipro</p>
+                                                <p class="m-0 Show">Show more jobs in the company</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="wipro-item col-md-6 mt-2">
+                                        <div>
+                                            <p class="graphics-item m-0" style="font-size: 20px;">4.5 - 6 LPA </p>
+                                            <p class="m-0"><i class="fa-solid fa-location-dot"></i> Hyderabad /
+                                                Secunderabad , Telengana</p>
+                                            <p class="m-0"><i class="fa-solid fa-briefcase"></i> 1 - 3 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-row row">
+                                    <div class="col-md-1"></div>
+                                    <div class="post col-md-5">
+                                        <p class="m-0">Posted: Few Hours Ago</p>
+                                        <p class="m-0">Openings:1</p>
+                                        <p class="m-0">Job Application:580</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="now-item" id="applyItem" onclick="applyBtn()">Saved</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="bg-element my-5">
+
+                            <div class="angel-item">
+                                <div class="d-flex flex-row row">
+                                    <div class="wipro-item item-wipro col-md-6 mt-2">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <img src="data:image/png;base64,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"
+                                                    alt="img" class=" angel-img" id="imgElement">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <p class="graphics-item m-0" style="font-size: 20px;">Graphic
+                                                    Designer
+                                                </p>
+                                                <p class="m-0" id="angelItem">Angel</p>
+                                                <p class="m-0 Show">Show more jobs in the company</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="wipro-item col-md-6 mt-2">
+                                        <div>
+                                            <p class="graphics-item m-0" style="font-size: 20px;">5-10 LPA </p>
+                                            <p class="m-0"><i class="fa-solid fa-location-dot"></i> Hyderabad /
+                                                Secunderabad , Telengana</p>
+                                            <p class="m-0"><i class="fa-solid fa-briefcase"></i> 1 - 3 years</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-row row">
+                                    <div class="col-md-1"></div>
+                                    <div class="post col-md-5">
+                                        <p class="m-0">Posted: Few Hours Ago</p>
+                                        <p class="m-0">Openings:1</p>
+                                        <p class="m-0">Job Application:580</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="now-item" id="applyItem" onclick="applyBtn()">Saved</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    <!-- CHANGE PASSWORD -->
+    <section id="changeItem">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1"><i class="fa-solid fa-arrow-left" onclick="backforwardToTheItemBtn()"></i></div>
+                <div class="col-lg-3 my-5">
+                    <div class="profile-item">
+                        <div class="icon-item text-center">
+                            <i class="fa-solid fa-user user-item p-5 mt-3"></i>
+                        </div>
+                        <div class="button-items ">
+                            <button class="active-item mt-4" onclick="proBtn()">Candidate Profile</button>
+                            <button class="active-item mt-2" onclick="resumeBtn()">Resume</button>
+                            <button class="active-item mt-2" onclick="appBtn()">Applied Jobs</button>
+                            <button class="active-item mt-2" onclick="alertBtn()">job Alerts</button>
+                            <button class="active-item mt-2" onclick="saveBtn()">Saved Jobs</button>
+                            <button class="active mt-2" onclick="changeBtn()">Change Password</button>
+                            <button class="active-item mt-2">Log Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 my-5">
+                    <div class="change-item p-3">
+                        <div class="item-change pb-4">
+                            <h4>Change Password</h4>
+                        </div>
+                        <div class="my-4">
+                            <label for="oldPassword">Old Password </label>
+                            <input type="text" id="oldPassword" class="form-control" placeholder="Enter your old password">
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-lg-6">
+                                <label for="newPassword">New Password </label>
+                                <input type="text" id="newPassword" class="form-control" placeholder="Enter your new password">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="conformPassword">Conform  Password </label>
+                                <input type="text" id="conformPassword" class="form-control" placeholder="conform password">
+                            </div>
+                        </div>
+                        <div>
+                            <button class="password-item">Update Password</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container p-4">
+            <div class="row pb-4" style="border-bottom: 1px solid white">
+                <div class="col-lg-3 col-md-6 text-white">
+                    <img src="pab bottom-logo.jpg" alt="img" class="img-fluid w-50 footer-img" />
+                    <p class="para1 my-2">
+                        We provide a direct access to the walk-in apportunities available
+                        on the site. result can be filterred on work experience. venue,
+                        from location, employer type, and data range.
+                    </p>
+                    <p class="mt-3">Toll Fre Number:</p>
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="mx-2">1800 833 9448</span>
+                </div>
+                <div class="col-lg-3 col-md-6 text-white">
+                    <h3 class="mt-4 my-3">For Candidates</h3>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>Candidate Profile</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>My Resume</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Applied Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Job Alert</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>Change Password</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-white">
+                    <h3 class="mt-4 my-3">Jobs</h3>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>All Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Company Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Category Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>Locational Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>Destignation Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Skill Jobs</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-white">
+                    <h3 class="mt-4 my-3">Browse Jobs</h3>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Companies</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Browse Jobs</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Jobs</span>
+                    </div>
+                    <h3 class="mt-4 my-3">Information</h3>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>Terms & Conditions</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i>
+                        <span>Privacy Policy</span>
+                    </div>
+                    <div class="my-2">
+                        <i class="fa-solid fa-angle-right"></i> <span>Fraud Alert</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 privacy-item">
+                <div class="col-lg-4 col-md-4 text-white p-1">
+                    <p>
+                        All rigths reserved <i class="fa-solid fa-copyright"></i> 2022
+                        PABjobs
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 p-1">
+                    <p class="desi">
+                        Designed by
+                        <a href="https://www.perfextechnologies.com/" class="Prefer">@PerfexTechnologies</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 text-white">
+                    <i class="fa-brands fa-linkedin socail p-1"></i>
+                    <i class="fa-brands fa-instagram socail p-1"></i>
+                    <i class="fa-brands fa-facebook socail p-1"></i>
+                    <i class="fa-brands fa-twitter socail p-1"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>

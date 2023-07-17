@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: rgb(227, 12, 8);
+    color: rgb(255, 254, 254);
+}
+
+.logo-item1{
+    height: 80px;
+    width: 150px;
+}
+.section{
+    background-color: #f8f2fb;
+
+}
+.section1{
+    background-color: white;
+    height: 90px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.fa-bars{
+    font-size: 25px;
+}
+
+#markItem{
+    display: none;
+    font-size: 25px;
+}
+
+.nav-item{
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    margin: auto;
+}
+
+
+.fa-circle-user{
+    font-size: 30px;  
+}
+.fa-bell{
+    font-size: 25px;
+}
+.nav-item .dash-item{
+    font-size: 20px;
+    color: #2e0466;
+}
+.section-item{
+    background-color: #f8f2fb;
+}
+.btn-section{
+    background-color: #efe7f9;
+    
+}
+.active{
+    background-color: #2c0264;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.active-item{
+    background-color: #fff;
+    border: none;
+    width: 100%;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.month-item{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.buy-item{
+    width: 100%;
+    border: 2px solid #2c0264;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #2c0264;
+    padding: 8px;
+    font-weight: 700;
+}
+.limit{
+    border-bottom: 2px solid grey;
+    width: 120px;
+}
+.fa-check{
+    font-size: 15px;
+    background-color: silver;
+    color: #fff;
+    border-radius: 100%;
+}
+.month-element{
+    color: #2c0264;
+}
+.jobitem{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+
+.footer{
+    background-color: black;
+}
+.footer-img{
+    border-radius: 5px;
+}
+.para1{
+    font-size: 16px;
+    line-height: 1.8;
+}
+.Prefer{
+    color: #4805a0;
+}
+.desi{
+    color: #ffffff;
+}
+.socail{
+    font-size: 26px;
+    transition: 2s;
+    cursor: pointer;
+}
+.socail:hover{
+    transform: rotate(360deg);
+}
+@media (min-width:320px) and (max-width:768px) {
+    .privacy-item{
+        font-size: 13px;
+    }
+    .socail{
+        font-size: 15px;
+    }
+    .bg-element{
+        margin-left: 0px;
+    }
+    .list-item{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+   
+}
+@media (min-width:320px) and (max-width:567px){
+    .gender-item{
+        font-size: 10px;
+    }
+    .job{
+        font-size: 13px;
+    }
+    .rec{
+        font-size: 13px;
+    }
+    .item-wipro{
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+}
