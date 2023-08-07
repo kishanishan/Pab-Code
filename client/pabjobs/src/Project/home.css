@@ -1,0 +1,228 @@
+.btn-item {
+    background-color: #4805a0;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: none;
+}
+li{
+    list-style-type: none;
+}
+.nav-item{
+    font-size: 18px;
+}
+.active1{
+    color: #2c0264;
+}
+.browse1{
+    position: relative;
+  
+}
+.filter1{
+    position: absolute;
+    left: auto;
+}
+.active1:hover{
+    background-color: #2c0264;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.browse{
+    color: #090909;
+}
+.browse:hover{
+    background-color: #2c0264;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.jobs{
+    color: #090909;
+}
+.jobs:hover{
+    background-color: #2c0264;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+}
+.buttons-itm{
+    background-color: #4f4ea0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    margin: auto;
+}
+
+.section {
+    background-image: url(BG\ Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tech-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+
+.sub-tech-items {
+    border: none;
+    border-radius: 10px;
+    color: #4805a0;
+    background-color: #4805a014;
+    padding: 8px;
+    width: 100%;
+    transition: tranform 1s;
+}
+
+.input-field {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: black;
+
+
+}
+
+.find-item {
+    color: #4805a0;
+}
+
+input[type=text] {
+    border: none;
+    padding: 10px;
+
+
+}
+
+input[type=text]:focus {
+    color: #212529;
+    background-color: none;
+    border-color: none;
+    box-shadow: none;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.fa-magnifying-glass {
+    padding: 16px;
+}
+
+.button-item1{
+    background-color: transparent;
+}
+.Search-item{
+    color: #4805a0;
+}
+#imgItem{
+    height: 40px;
+    width: 40px;
+}
+.section3{
+    background-color: #4805a014;
+
+}
+.hyd-item{
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 6px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    transition: tranform 1s;
+ 
+
+}
+.hyd-item:hover{
+    transform: scale(1.1);
+}
+.company-img{
+    height: 50px;
+    width: 50px;
+}
+.company-img1{
+    height: 50px;
+    width: 50px;
+}
+.company-img2{
+    height: 30px;
+    width: 30px;
+}
+.company-img3{
+    height: 30px;
+    width: 30px;
+}
+.com-item{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    height: 150px;
+    transition: tranform 1s;
+}
+.com-item:hover{
+    transform: scale(1.1);
+}
+.sell-img{
+    background-color: #5b0495;
+}
+.white-item{
+    color: #fff;
+}
+.sell-item{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 50px;
+}
+.companies-item{
+    background-color: rgba(128, 128, 128, 0.148);
+    height: 80px;
+}
+.img-comp{
+    height:50px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.img-comp:hover{
+    height: 70px;
+}
+.sub-browse{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    transition: tranform 1s;
+
+
+}
+.sub-browse:hover{
+    transform: scale(1.1);
+
+}
+.bg-item{
+    background-color: #03294e;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+.item-input{
+    background-color: #fff;
+
+}
+.input1{
+    border: none;
+}
+.get-item{
+    width: 50%;
+    border: none;
+    background-color: rgb(255, 208, 0);
+    color: #fff;
+    font-weight: 700;
+}

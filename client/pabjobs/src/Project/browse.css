@@ -1,0 +1,134 @@
+.app-item{
+    overflow: hidden;
+}
+
+.browse{
+    color: #2c0264 ;
+}
+.browse1{
+  position: relative;
+
+}
+.filter1{
+  position: absolute;
+  left: auto;
+}
+.active:hover{
+  background-color: #2c0264;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.section{
+    background-image: url(BG\ Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1{
+    background-color: #fff;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219) !important;
+}
+.homeBtn{
+  border: none;
+  background-color: transparent;
+  color: #090909;
+
+}
+.browse:hover{
+  background-color: #2c0264;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.homeBtn:hover{
+  background-color: #2c0264;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.jobs:hover{
+  background-color: #2c0264;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+.filter{
+    font-size: 23px;
+    font-weight: 700;
+}
+.location{
+    border: 1px solid #9649fd ;
+    background-color:#f9f9f9;
+    color: #9649fd ;
+    border-radius: 10px;
+    width: 100%;
+}
+.location1{
+  background-color:#f3f3f37a;
+  color: #9649fd ;
+  padding: 10px 0px;
+  margin: 0px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+}
+.selected{
+  border: 1px solid #9649fd;
+  background-color: #f9f9f9;
+}
+.text-bold{
+    font-weight: 600;
+}
+.textitem{
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-left: 5px;
+}
+  .BtnText
+  {
+    color: #9649fd;
+  }
+  .showitem{
+    color: rgb(82, 81, 81);
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .companyItem{
+    box-shadow: 2px 4px 11px rgb(221, 219, 219) !important;
+    border-radius: 10px;
+  }
+  .designation{
+    border-right: 2px solid silver;
+  }
+.row-item{
+  border-bottom: 2px solid rgb(202, 200, 200);
+}
+  .loginitem{
+    background-color: #4805a0;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: none;
+  }
+  .jobdescription{
+    box-shadow: 2px 4px 11px rgb(221, 219, 219) !important;
+    border-radius: 10px;
+
+  }
+  .satityimg{
+    height: 70px;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+  }
+
+
+  .wastefellow
+  {
+    background-color: green;
+  }
