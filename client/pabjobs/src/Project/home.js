@@ -17,7 +17,7 @@ const Home = () => {
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
-                                <div className="logo-item m-auto mx-5">
+                                <div className="logo-item m-auto ">
                                     <img src={Navlogo} alt="logo" className="img-fluid logo-item1" />
                                 </div>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,13 +41,12 @@ const Home = () => {
                                         <li className="  nav-item browse1 mx-2">
                                             <a href="" className="dropdown-toggle filter1 link-item  jobs nav-link" data-bs-toggle="dropdown">JOBS</a>
                                             <ul className="dropdown-menu " aria-labelledby='dropdown2'>
-                                                <li><a className="dropdown-item" href="#">Experience</a></li>
-                                                <li><a className="dropdown-item" href="#">Location</a></li>
-                                                <li><a className="dropdown-item" href="#">Salary</a></li>
-                                                <li><a className="dropdown-item" href="#">Industry</a></li>
-                                                <li><a className="dropdown-item" href="#">Destignation</a></li>
-                                                <li><a className="dropdown-item" href="#">Education</a></li>
-                                                <li><a className="dropdown-item" href="#">Skills</a></li>
+                                                <li><a className="dropdown-item" href="#">All Jobs</a></li>
+                                                <li><a className="dropdown-item" href="#">Company Jobs</a></li>
+                                                <li><a className="dropdown-item" href="#">Category Jobs</a></li>
+                                                <li><a className="dropdown-item" href="#">Location Jobs</a></li>
+                                                <li><a className="dropdown-item" href="#">Destignation Jobs</a></li>
+                                                <li><a className="dropdown-item" href="#">Skill Jobs</a></li>
 
                                             </ul>
                                         </li>

@@ -64,112 +64,9 @@ function Browse() {
 			<div className="section ">
 				{/* NAVBAR SECTION */}
 				<section className="section1 sticky-top ">
-					{/* <div className="container  ">
-						<div className="row ">
-							<div className="col-lg-1"></div>
-							<div className="col-lg-2 col-md-6 col-6 text-center  py-2">
-								<div className="logo-item">
-									<img
-										src={Navlogo}
-										alt="logo"
-										className="img-fluid logo-item1"
-									/>
-								</div>
-							</div>
-							
-							<div
-								className="col-lg-7 col-md-9  align-items-center align-self-center list-item mt-1 "
-								id="listItem"
-							>
-								<ul className="row  my-4 ">
-									<li className="col-md-2 col-6  nav-item">
-										<button
-											className=" link-item homeBtn nav-link "
-											onClick={GotoHome}
-										>
-											HOME
-										</button>
-									</li>
-									<li className="col-md-3 col-6 nav-item">
-										<a
-											href=""
-											className="dropdown-toggle link-item nav-link browse active"
-											data-bs-toggle="dropdown"
-											id="browseItem"
-										>
-											BROWSE JOBS
-										</a>
-										<ul className="dropdown-menu " aria-labelledby="dropdown2">
-											<li>
-												<a className="dropdown-item " href="#">
-													My Browse Filter list
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li className="col-md-2 col-6  nav-item">
-										<a
-											href=""
-											className="dropdown-toggle link-item text-center jobs nav-link"
-											data-bs-toggle="dropdown"
-										>
-											JOBS
-										</a>
-										<ul className="dropdown-menu " aria-labelledby="dropdown2">
-											<li>
-												<a className="dropdown-item" href="#">
-													Experience
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Location
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Salary
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Industry
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Destignation
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Education
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Skills
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-
-							<div className="col-lg-2 m-auto">
-								<button
-									className="align-items-center align-self-center  buttons-itm"
-									onClick={GotoAuth}
-								>
-									<i className="fa-solid fa-user"></i>
-									<span>SIGNUP/LOGIN</span>
-								</button>
-							</div>
-						</div>
-					</div> */}
 					<nav className="navbar navbar-expand-lg navbar-light bg-light">
 						<div className="container ">
-							<div className="logo-item m-auto mx-5">
+							<div className="logo-item m-auto ">
 								<img
 									src={Navlogo}
 									alt="logo"
@@ -229,37 +126,33 @@ function Browse() {
 										>
 											<li>
 												<a className="dropdown-item" href="#">
-													Experience
+													All Jobs
 												</a>
 											</li>
 											<li>
 												<a className="dropdown-item" href="#">
-													Location
+													Company Jobs
 												</a>
 											</li>
 											<li>
 												<a className="dropdown-item" href="#">
-													Salary
+													Category Jobs
 												</a>
 											</li>
 											<li>
 												<a className="dropdown-item" href="#">
-													Industry
+													Location Jobs
 												</a>
 											</li>
 											<li>
 												<a className="dropdown-item" href="#">
-													Destignation
+													Designation Jobs
 												</a>
 											</li>
+											
 											<li>
 												<a className="dropdown-item" href="#">
-													Education
-												</a>
-											</li>
-											<li>
-												<a className="dropdown-item" href="#">
-													Skills
+													Skill Jobs
 												</a>
 											</li>
 										</ul>
