@@ -16,6 +16,20 @@ Content-Type: application/json
 
 GET http://localhost:3001/user/64b8e151d7be26ab54a2a849
 
+
+###
+put http://localhost:3001/user/64b8dd1fd21728226ae59c9d
+Content-Type: application/json
+
+{
+    "state":"TS",
+    "city":"HYD",
+    "expYears":"0-2",
+    "userResumeHeadline":"This is my resume",
+    "userProfile":"this is my profile",
+    "userskill":"Html",
+}
+
 ###
 POST  http://localhost:3001/login 
 Content-Type: application/json
@@ -31,25 +45,24 @@ POST http://localhost:3001/browsers
 Content-Type: application/json
 
 {
-    "JobId":"6",
-    "designation":"Testing",
-    "companyName":"satiety solutions",
-    "salary":"3-5 LPA",
+    "JobId":"7",
+    "designation":"Frontend Developer",
+    "companyName":"Perfex Technologies",
+    "salary":"4-5 LPA",
     "jobtype":"Full Time",
-    "location":"Hyderabad",
+    "location":"Hyderabad ",
     "experience":"Experience",
-    "publish":"Published 2 days ago",
+    "publish":"2023-08-11",
     "jobtext":"Show more jobs..",
-    "posted":"Posted: 2 days ago",
-    "expdetails":"0-2 years",
-    "jobopening":"openings: 3",
+    "posted":"2023-08-11",
+    "expdetails":"1-3 years",
+    "jobopening":"openings: 4",
     "jobApplication":"Job Applicants: 0",
     "jobDescription":"Job Description",
     "jobSkills":"Skils & Responsibilties :",
     "jobRole":"Roles and Responsibility",
-    "jobPara":"Job Title: Test Engineer Job Summary: We are seeking a skilled Test Engineer to join our quality assurance team. As a Test Engineer, you will be responsible for designing, implementing, and executing test strategies to ensure the quality and reliability of our software products. You will work closely with the development team to identify and report defects, as well as collaborate with cross-functional teams to ensure the delivery of high-quality software solutions. The ideal candidate should have a strong understanding of software testing methodologies, excellent problem-solving skills, and a passion for delivering top-notch software products. Responsibilities: Test Planning: Collaborate with project stakeholders to create comprehensive test plans, including test cases, test data, and test environments. Test Execution: Execute manual and automated tests to identify defects and ensure the functionality and quality of software products. Defect Reporting: Identify, document, and track defects using issue tracking systems, and work with development teams to resolve and verify fixes. Test Automation: Develop and maintain automated test scripts to increase test coverage and efficiency. Regression Testing: Conduct regular regression testing to validate software functionality after changes or updates. Performance Testing: Design and execute performance tests to assess application responsiveness and scalability. Security Testing: Conduct security testing to identify vulnerabilities and ensure the security of the software. Compatibility Testing: Verify software compatibility across different browsers, operating systems, and devices. Documentation: Create and maintain test documentation, including test plans, test cases, and test reports. Continuous Improvement: Propose and implement process improvements and best practices to enhance testing efficiency and effectiveness. Collaboration: Work closely with developers, product managers, and other stakeholders to ensure effective communication and understanding of project requirements. Product Validation: Validate new features and enhancements to ensure they meet the specified requirements and user expectations. Requirements: Testing Expertise: Strong understanding of software testing methodologies, including manual and automated testing. Test Automation Skills: Experience with test automation tools and frameworks, such as Selenium, JUnit, TestNG, or similar. Bug Tracking: Familiarity with issue tracking systems like Jira or Bugzilla to report and manage defects. Test Planning and Execution: Ability to create test plans, design test cases, and execute test scenarios effectively. Problem-Solving Skills: Excellent problem-solving and analytical abilities to identify and troubleshoot issues. Technical Aptitude: Proficiency in programming languages (e.g., Java, Python) is a plus. Communication Skills: Strong verbal and written communication skills for effective collaboration and reporting. Education and Experience: Bachelor's degree in Computer Science, Software Engineering, or a related field (or equivalent work experience). Proven experience as a Test Engineer, Software Tester, or Quality Assurance Analyst. Preferred (Not Required): Knowledge of Agile development methodologies. Experience with performance testing tools (e.g., JMeter, LoadRunner). Understanding of security testing tools and techniques (e.g., OWASP). Familiarity with Continuous Integration/Continuous Deployment (CI/CD) pipelines. Testing certifications (e.g., ISTQB) would be a plus. Note that job descriptions may vary depending on the company and specific projects involved. The above description provides a general outline of the role and its responsibilities as a Test Engineer.",
-    "Skills":"Manual Testing Automation Testing "
- 
+    "jobPara":"As a Frontend Developer, your primary responsibility is to create and maintain the user-facing aspects of a website or web application. You'll work closely with the design and backend development teams to bring the user interface to life and ensure a seamless user experience. Here's a typical job description for a Frontend Developer: Job Title: Frontend Developer Job Summary: We are seeking a skilled Frontend Developer to join our dynamic team. As a Frontend Developer, you will be responsible for translating user interface designs into clean and interactive web pages. Your expertise in HTML, CSS, and JavaScript will be essential in delivering a visually appealing and user-friendly experience for our website or web application users. You should be detail-oriented, self-motivated, and have a passion for staying up-to-date with the latest industry trends and best practices. Responsibilities: Implement User Interface (UI) Designs: Transform visual designs and wireframes into well-structured, responsive, and cross-browser compatible web pages. Develop Interactive Features: Use JavaScript frameworks and libraries to build interactive elements and dynamic user experiences on the frontend. Optimize Performance: Ensure that the frontend of the website or application is optimized for speed and performance, minimizing load times and improving overall responsiveness. Ensure Cross-Browser Compatibility: Test and troubleshoot frontend code across various browsers and devices to ensure consistent behavior and appearance. Collaborate with Backend Developers: Work closely with backend developers to integrate frontend code with server-side logic and databases. Maintain Code Quality: Implement best practices and coding standards to produce clean, maintainable, and scalable code. Stay Current with Emerging Technologies: Keep abreast of the latest developments in frontend technologies, frameworks, and libraries, and suggest innovative solutions to improve the user experience. Mobile Responsiveness: Ensure that the website or application is optimized for mobile devices and follows responsive design principles. Cross-Functional Collaboration: Collaborate with designers, UX/UI teams, and other stakeholders to ensure the best possible user experience. Requirements: Proficient in HTML, CSS, and JavaScript: Strong expertise in building responsive and interactive web pages using HTML5, CSS3, and modern JavaScript libraries and frameworks like React, Angular, or Vue.js. Browser Compatibility: Familiarity with cross-browser compatibility issues and ways to work around them. Responsive Design: Understanding of responsive design principles and the ability to create web pages that work seamlessly across various devices and screen sizes. Version Control: Experience with version control systems like Git. Testing and Debugging: Proficiency in testing and debugging frontend code to identify and resolve issues. Performance Optimization: Knowledge of techniques to optimize frontend performance and reduce page load times. Problem-Solving Skills: Strong problem-solving and analytical skills to troubleshoot and find solutions to complex frontend challenges. Communication Skills: Good verbal and written communication skills to collaborate effectively with team members and stakeholders. Education and Experience: Bachelor's degree in Computer Science, Web Development, or a related field (or equivalent work experience). Proven experience as a Frontend Developer or similar role, with a portfolio of past projects showcasing your skills. Preferred (Not Required): Experience with CSS preprocessors like SASS or LESS. Familiarity with frontend build tools like Webpack or Gulp. Knowledge of UX/UI design principles and ability to work closely with designers. Understanding of backend technologies and RESTful APIs. Experience with server-side rendering (SSR) and client-side rendering (CSR) approaches. Note that job descriptions may vary depending on the company and specific projects involved. The above description provides a general outline of the role and its responsibilities.",
+    "Skills":["HTML", "CSS", "Bootstrap ", "JavaScript","ReactJS"]
 
 }
 ###
@@ -61,4 +74,83 @@ get http://localhost:3001/indJob/4
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRkMDgwNTMxYWNmMmQwMmRhNGZiMjllIiwiaWF0IjoxNjkxMzk4NjI4LCJleHAiOjE2OTUzOTg2Mjh9.4Afm9JPBuMjlFQfCdTfU3-hm2BJQAiuip2zV51qth-k
 
  
+###
+
  
+POST http://localhost:3001/job_location
+Content-Type: application/json
+
+{
+     "Id":"58",
+     "JobLocation":"Bangalore"
+}
+
+
+###
+GET http://localhost:3001/joblocation
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRkYzlhNTk1NTAyZjgyOWY5NmY4MTdhIiwiaWF0IjoxNjkyMTc5MDczLCJleHAiOjE2OTYxNzkwNzN9.6sYgGjzzyWUYwbsoIhfkzL6L_jK4CtYYkobbi8V2vE4
+
+
+###
+
+POST http://localhost:3001/job_company
+Content-Type: application/json
+
+{
+    "Id":"33",
+    "JobComapny":"Micron Tech"
+}
+
+###
+GET http://localhost:3001/jobcompany
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRkYzlhNTk1NTAyZjgyOWY5NmY4MTdhIiwiaWF0IjoxNjkyMTc5MDczLCJleHAiOjE2OTYxNzkwNzN9.6sYgGjzzyWUYwbsoIhfkzL6L_jK4CtYYkobbi8V2vE4
+
+###
+
+POST http://localhost:3001/job_category
+Content-Type: application/json
+
+{
+    "Id":"44",
+    "JobCategory":"Veterinary Medicine"
+}
+
+###
+GET http://localhost:3001/jobcategory
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRkYzlhNTk1NTAyZjgyOWY5NmY4MTdhIiwiaWF0IjoxNjkyMTc5MDczLCJleHAiOjE2OTYxNzkwNzN9.6sYgGjzzyWUYwbsoIhfkzL6L_jK4CtYYkobbi8V2vE4
+
+
+
+###
+
+POST http://localhost:3001/job_designation
+Content-Type: application/json
+
+{
+    "Id":"68",
+    "JobDesignation":"RPA Developer"
+}
+
+###
+
+
+GET http://localhost:3001/jobdesignation
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRkYzlhNTk1NTAyZjgyOWY5NmY4MTdhIiwiaWF0IjoxNjkyMTc5MDczLCJleHAiOjE2OTYxNzkwNzN9.6sYgGjzzyWUYwbsoIhfkzL6L_jK4CtYYkobbi8V2vE4
+
+###
+POST http://localhost:3001/job_skill
+Content-Type: application/json
+
+{
+    "Id":"65",
+    "JobSkill":"Java Developer"
+}
+
+###
+GET http://localhost:3001/jobskill
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRkYzlhNTk1NTAyZjgyOWY5NmY4MTdhIiwiaWF0IjoxNjkyMTc5MDczLCJleHAiOjE2OTYxNzkwNzN9.6sYgGjzzyWUYwbsoIhfkzL6L_jK4CtYYkobbi8V2vE4
+
+
+###
+DELETE http://localhost:3001/user/employee/64fabb2932f33ceb83e91993
+

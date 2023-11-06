@@ -8,8 +8,17 @@ const Home = () => {
     const GotoBrowse = () => {
         Navigate('/browse')
     }
-    const GotoAuth = () => {
-        Navigate('/auth')
+    const GotoLogin = () => {
+        Navigate('/login')
+    }
+    const GotoJobs = () => {
+		Navigate("/job");
+	};
+    const GotoResume = () => {
+        Navigate('/resume')
+    }
+    const GotoProfile = () => {
+        Navigate('/profile')
     }
     return (
         <div>
@@ -17,106 +26,93 @@ const Home = () => {
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container">
-                                <div className="logo-item m-auto ">
-                                    <img src={Navlogo} alt="logo" className="img-fluid logo-item1" />
-                                </div>
-                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className="navbar-toggler-icon"></span>
-                                </button>
-                                <div className="collapse navbar-collapse m-auto" id="navbarNav">
-                                    <ul className="navbar-nav mx-5">
-                                        <li className="  nav-item  mx-2">
-                                            <a href="" className=" link-item nav-link active1 ">HOME</a>
+                        <div className="logo-item m-auto ">
+                            <img src={Navlogo} alt="logo" className="img-fluid logo-item1" />
+                        </div>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse m-auto" id="navbarNav">
+                            <ul className="navbar-nav mx-5">
+                                <li className="  nav-item  mx-2">
+                                    <a href="" className=" link-item nav-link active1 ">HOME</a>
 
-                                        </li>
-                                        <li className=" nav-item browse1 mx-2">
-                                            <a href="" className="dropdown-toggle link-item nav-link browse " data-bs-toggle="dropdown"
-                                                id="browseItem">BROWSE JOBS</a>
-                                            <ul className="dropdown-menu filter1" aria-labelledby='dropdown2'>
-                                                <li><button className="dropdown-item" onClick={GotoBrowse}  >My Browse Filter list</button></li>
+                                </li>
+                                <li className=" nav-item browse1 mx-2">
+                                    <a href="" className="dropdown-toggle link-item nav-link browse " data-bs-toggle="dropdown"
+                                        id="browseItem">BROWSE JOBS</a>
+                                    <ul className="dropdown-menu filter1" aria-labelledby='dropdown2'>
+                                        <li><button className="dropdown-item" onClick={GotoBrowse}  >My Browse Filter list</button></li>
 
-
-                                            </ul>
-                                        </li>
-                                        <li className="  nav-item browse1 mx-2">
-                                            <a href="" className="dropdown-toggle filter1 link-item  jobs nav-link" data-bs-toggle="dropdown">JOBS</a>
-                                            <ul className="dropdown-menu " aria-labelledby='dropdown2'>
-                                                <li><a className="dropdown-item" href="#">All Jobs</a></li>
-                                                <li><a className="dropdown-item" href="#">Company Jobs</a></li>
-                                                <li><a className="dropdown-item" href="#">Category Jobs</a></li>
-                                                <li><a className="dropdown-item" href="#">Location Jobs</a></li>
-                                                <li><a className="dropdown-item" href="#">Destignation Jobs</a></li>
-                                                <li><a className="dropdown-item" href="#">Skill Jobs</a></li>
-
-                                            </ul>
-                                        </li>
 
                                     </ul>
-                                    <button
+                                </li>
+                                <li className="  nav-item browse1 mx-2">
+                                    <a href="" className="dropdown-toggle filter1 link-item  jobs3 nav-link" data-bs-toggle="dropdown">JOBS</a>
+                                    <ul className="dropdown-menu " aria-labelledby='dropdown2'>
+                                    <button className="bitem" onClick={GotoJobs}>
+												<li>
+													<a className="dropdown-item" href="#">
+														All Jobs
+													</a>
+												</li>
+											</button>                                        
+                                        <li><a className="dropdown-item" href="#">Company Jobs</a></li>
+                                        <li><a className="dropdown-item" href="#">Category Jobs</a></li>
+                                        <li><a className="dropdown-item" href="#">Location Jobs</a></li>
+                                        <li><a className="dropdown-item" href="#">Destignation Jobs</a></li>
+                                        <li><a className="dropdown-item" href="#">Skill Jobs</a></li>
+
+                                    </ul>
+                                </li>
+                               
+
+                            </ul>
+                            <li className='nav-item list-dropdown'>
+                                        <div className='list-dropdown1'>
+                                            <button className=" user-btn-item d-flex " id='dropdown3' data-bs-toggle="dropdown">
+                                                <i className="fa-solid fa-circle-user  px-3 useritem" id="userId"></i>
+                                                <div className=""><i class="fa-solid fa-caret-down dropitem"></i></div>
+                                                <ul className="dropdown-menu " aria-labelledby='dropdown3'>
+                                                    <li><a className="dropdown-item" href="#" onClick={GotoProfile}>Candidate Profile</a></li>
+                                                    <li><a className="dropdown-item" href="#" onClick={GotoResume} >Resume</a></li>
+                                                    <li><a className="dropdown-item" href="#">Applied Jobs</a></li>
+                                                    <li><a className="dropdown-item" href="#">Job alerts</a></li>
+                                                    <li><a className="dropdown-item" href="#">Saved Jobs</a></li>
+                                                    <li><a className="dropdown-item" href="#">Change Password</a></li>
+                                                    <li><a className="dropdown-item" href="#" onClick={GotoLogin}>Logout</a></li>
+                                                </ul>
+                                            </button>
+                                        </div>
+                                    </li>
+                            {/* <li className=' nav-item browse5'>
+                            <button className=" user-btn-item d-flex" id='dropdown3' data-bs-toggle="dropdown">
+                                <i className="fa-solid fa-circle-user  px-3 useritem" id="userId"></i>
+                                <div className=""><i class="fa-solid fa-caret-down dropitem"></i></div>
+                                <ul className="dropdown-menu " aria-labelledby='dropdown3'>
+                                        <li><a className="dropdown-item" href="#">Candidate Profile</a></li>
+                                        <li><a className="dropdown-item" href="#">Resume</a></li>
+                                        <li><a className="dropdown-item" href="#">Applied Jobs</a></li>
+                                        <li><a className="dropdown-item" href="#">Job alerts</a></li>
+                                        <li><a className="dropdown-item" href="#">Saved Jobs</a></li>
+                                        <li><a className="dropdown-item" href="#">Change Password</a></li>
+                                        <li><a className="dropdown-item" href="#" onClick={GotoLogin}>Logout</a></li>
+
+
+                                    </ul>
+
+                            </button>
+                            </li> */}
+                            {/* <button
                                         className="align-items-end align-self-center text-end  buttons-itm"
                                         onClick={GotoAuth}
                                     >
                                         <i className="fa-solid fa-user"></i>
                                         <span>SIGNUP/LOGIN</span>
-                                    </button>
-
-
-                                </div>
-
-
-                    </div>
-                </nav>
-
-                {/* <div className="container ">
-                <div className="row ">
-                    <div className="col-lg-1"></div>
-                    <div className="col-lg-2 col-md-6 col-6 text-center  py-2">
-                        <div className="logo-item">
-                            <img src={Navlogo} alt="logo" className="img-fluid logo-item1" />
+                                    </button> */}
                         </div>
                     </div>
-                        <div className="col-lg-7 col-md-9  align-items-center align-self-center list-item mt-1 " id="listItem">
-                        <ul className="row  my-4 ">
-                            <li className="col-md-2 col-6  nav-item">
-                                <a href="" className=" link-item nav-link active1 ">HOME</a>
-
-                            </li>
-                            <li className="col-md-3 col-6 nav-item">
-                                <a href="" className="dropdown-toggle link-item nav-link browse " data-bs-toggle="dropdown"
-                                    id="browseItem">BROWSE JOBS</a>
-                                <ul className="dropdown-menu " aria-labelledby='dropdown2'>
-                                    <li><button className="dropdown-item"  onClick={GotoBrowse}  >My Browse Filter list</button></li>
-                                  
-
-                                </ul>
-                            </li>
-                            <li className="col-md-2 col-6  nav-item">
-                                <a href="" className="dropdown-toggle link-item text-center jobs nav-link" data-bs-toggle="dropdown">JOBS</a>
-                                <ul className="dropdown-menu " aria-labelledby='dropdown2'>
-                                    <li><a className="dropdown-item" href="#">Experience</a></li>
-                                    <li><a className="dropdown-item" href="#">Location</a></li>
-                                    <li><a className="dropdown-item" href="#">Salary</a></li>
-                                    <li><a className="dropdown-item" href="#">Industry</a></li>
-                                    <li><a className="dropdown-item" href="#">Destignation</a></li>
-                                    <li><a className="dropdown-item" href="#">Education</a></li>
-                                    <li><a className="dropdown-item" href="#">Skills</a></li>
-
-                                </ul>
-                            </li>
-               
-                        </ul>
-
-
-                    </div>
-
-                    <div className="col-lg-2 m-auto">
-                        <button className='align-items-center align-self-center  buttons-itm' onClick={GotoAuth}>
-                        <i class="fa-solid fa-user"></i>
-                            <span>SIGNUP/LOGIN</span>
-                        </button>
-                    </div>
-                </div>
-            </div> */}
+                </nav>
             </section>
             <div className="section">
                 <section className="container">
@@ -155,42 +151,42 @@ const Home = () => {
                         <div className="tech-item p-3">
                             <div className="row mt-2">
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Banking</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Banking</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Sales</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Sales</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">HR Executive</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>HR Executive</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Manual Testing</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Manual Testing</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">IT</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>IT</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Devops Engineer</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Devops Engineer</button>
                                 </div>
                             </div>
                             <div className="row my-4">
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Digital Marketing</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Digital Marketing</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Graphics Designing</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Graphics Designing</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
                                     <button className="sub-tech-items mt-2">Data Analyst</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Accounting</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Accounting</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Software Engineer</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Software Engineer</button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="sub-tech-items mt-2">Freshers</button>
+                                    <button className="sub-tech-items mt-2" onClick={GotoBrowse}>Freshers</button>
                                 </div>
                             </div>
                             <div className="text-end">
@@ -210,42 +206,42 @@ const Home = () => {
                             <h4 className="Search-item my-4">Serch By Location</h4>
                             <div className="row my-4">
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="hyd-item mt-2">
+                                    <button className="hyd-item mt-2" onClick={GotoBrowse}>
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tlFiXeRh1exWvHavD7dROhuyPVGp4ZSLew&usqp=CAU"
                                             alt="img" className="img-fluid" id="imgItem" />
                                         <span className="text">Hyderabad</span>
                                     </button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="hyd-item mt-2">
+                                    <button className="hyd-item mt-2" onClick={GotoBrowse}>
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUA_bGMYLGyTBWr4W7FHGiIkL465ya7PNww&usqp=CAU"
                                             alt="img" className="img-fluid" id="imgItem" />
                                         <span className="text">Mumbai</span>
                                     </button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="hyd-item mt-2">
+                                    <button className="hyd-item mt-2" onClick={GotoBrowse}>
                                         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ENR8p3XI2eUEKZrLMvqerWNgiEy6kho1zRVmOpx_MXflsWUj"
                                             alt="img" className="img-fluid" id="imgItem" />
                                         <span className="text">Chennai</span>
                                     </button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="hyd-item mt-2">
+                                    <button className="hyd-item mt-2" onClick={GotoBrowse}>
                                         <img src="data:image/jpeg;base64,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"
                                             alt="img" className="img-fluid" id="imgItem" />
                                         <span className="text">Pune</span>
                                     </button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="hyd-item mt-2">
+                                    <button className="hyd-item mt-2" onClick={GotoBrowse}>
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRupD6sBpL8_fDqiagHcJ45GyjzyEIxK3TCJw&usqp=CAU"
                                             alt="img" className="img-fluid" id="imgItem" />
                                         <span className="text">Benguluru</span>
                                     </button>
                                 </div>
                                 <div className="col-lg-2 col-md-4 col-sm-6">
-                                    <button className="hyd-item mt-2">
+                                    <button className="hyd-item mt-2" onClick={GotoBrowse}>
                                         <img src="data:image/jpeg;base64,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"
                                             alt="img" className="img-fluid" id="imgItem" />
                                         <span className="text">Delhi</span>
@@ -287,7 +283,7 @@ const Home = () => {
                                         <p className="m-0">Banking & Finance <i className="fa-solid fa-chevron-right px-3"></i> </p>
                                         <p className="Search-item mb-4">1.5k Jobs are available</p>
                                         <img src="data:image/png;base64,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"
-                                            alt="img" className="img-fluid company-img2" />
+                                            alt="img" className="img-fluid company-img3" />
                                         <img src="data:image/png;base64,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"
                                             alt="img" className="img-fluid company-img3" />
                                         <img src="data:image/png;base64,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"
@@ -400,62 +396,62 @@ const Home = () => {
                             <h4 className="Search-item my-4">Browse Jobs By Designation</h4>
                             <div className="row mt-4">
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">ABAP Consultant</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>ABAP Consultant</button>
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">BPO Executive</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>BPO Executive</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Chef</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Chef</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">BPO Executive</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>BPO Executive</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Chef</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Chef</button>
                                 </div>
                             </div>
                             <div className="row mt-4">
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Editor</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Editor</button>
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Finance Manager</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Finance Manager</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Game Designer</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Game Designer</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Finance Manager</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Finance Manager</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Game Designer</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Game Designer</button>
                                 </div>
                             </div>
                             <div className="row mt-4">
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">HR Assistant</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>HR Assistant</button>
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Industrial Enginerr</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Industrial Enginerr</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Java Developer</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Java Developer</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Industrial Enginerr</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Industrial Enginerr</button>
 
                                 </div>
                                 <div className="col-lg col-md-4 col-sm-6">
-                                    <button className="sub-browse mt-2">Java Developer</button>
+                                    <button className="sub-browse mt-2" onClick={GotoBrowse}>Java Developer</button>
                                 </div>
                             </div>
                         </div>

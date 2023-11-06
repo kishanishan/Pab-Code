@@ -31,7 +31,7 @@ const Schema = new mongoose.Schema(
             require:true
         },
         publish:{
-            type:String,
+            type:Date,
             require:true
         },
         jobtext:{
@@ -71,7 +71,7 @@ const Schema = new mongoose.Schema(
             require:true
         },
         Skills:{
-            type:String,
+            type:Array,
             require:true
         },
        

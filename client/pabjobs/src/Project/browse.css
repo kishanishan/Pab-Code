@@ -13,6 +13,12 @@
   position: absolute;
   left: auto;
 }
+.bitem{
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  width: 100%;
+}
 .active:hover{
   background-color: #2c0264;
   padding: 5px;
@@ -48,7 +54,16 @@
   color: #fff;
   border-radius: 5px;
 }
-.jobs:hover{
+.jobs2{
+  color: black;
+  font-size: 16px;
+
+}
+.browse2{
+  color: #2c0264 ;
+  font-size: 18px;
+}
+.jobs2:hover{
   background-color: #2c0264;
   padding: 5px;
   color: #fff;
@@ -74,8 +89,18 @@
   width: 100%;
   border: none;
 }
+.listitem{
+  font-size: 20px;
+  font-weight: 700;
+  color: #646262;
+  padding: 0px;
+}
+.skillitem{
+  font-weight: 600;
+  font-size: 16px;
+}
 .selected{
-  border: 1px solid #9649fd;
+  border: 2px solid #9649fd;
   background-color: #f9f9f9;
 }
 .text-bold{
@@ -102,18 +127,46 @@
     box-shadow: 2px 4px 11px rgb(221, 219, 219) !important;
     border-radius: 10px;
   }
-  .designation{
+  /* .designation{
     border-right: 2px solid silver;
-  }
+  } */
 .row-item{
-  border-bottom: 2px solid rgb(202, 200, 200);
+  box-shadow: 1px 2px 5px rgb(221, 219, 219) !important;
+  border-radius: 10px;
+}
+.scrollbar_item{
+  height: 270px;
+  overflow-y: scroll;
+  text-align: justify;
+}
+/* Change the color of the scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+}
+
+/* Change the color of the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #9d9c9eb0;
+  border-radius: 20px;
+}
+
+/* Change the color of the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #234567; /* Change to your desired hover color */
+}
+.opening-item{
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
   .loginitem{
     background-color: #4805a0;
     color: white;
-    padding: 5px 25px;
+    padding: 8px;
     border-radius: 10px;
     border: none;
+    font-size: 18px;
+    font-weight: 600;
   }
   .jobdescription{
     box-shadow: 2px 4px 11px rgb(221, 219, 219) !important;

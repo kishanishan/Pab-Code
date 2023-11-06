@@ -1,0 +1,362 @@
+.user-item{
+    font-size: 80px;
+    background-color: rgba(115, 115, 115, 0.485);
+    border-radius: 100%;
+    color: #fff;
+    
+}
+
+.profile-item{
+    background-color: #fff ;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+
+}
+.active5{
+    color: black;
+    font-size: 16px;
+}
+.active5:hover{
+    color: #fff;
+    background-color: #2c0264;
+    border-radius: 5px;
+}
+.user-btn-item{
+    border: none;
+    background-color: transparent;
+    color: #2c0264;
+
+}
+.browse{
+    color: black;
+}
+.dropitem{
+    font-size: 27px;
+}
+.button-profile{
+    width: 100%;
+    background-color:#270d44;
+    color: #fff;
+    margin: 5px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.button-profile-item{
+    width: 100%;
+    background-color: transparent;
+    color: #212529;
+    border: none;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.button-profile-item:hover{
+    background-color: #270d44;
+    color: white;
+}
+#freshItem {
+    transform: scale(1.5);
+    margin-right: 20px;
+}
+#experienceItem{
+    transform: scale(1.5);
+    margin-right: 20px;
+}
+.list-dropdown{
+    position: relative;
+    margin: auto;
+  
+}
+.list-dropdown1{
+    display: contents !important;
+}
+
+.inputfield-item{
+    border: 1px solid #2c0264 !important;
+}
+.inputfield-item:focus{
+    color: #212529;
+    background-color:none;
+    border-color:black;
+    box-shadow: none;
+
+}
+.select-Experience-item{
+    border: 1px solid black !important;
+    border-radius: 5px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 600;
+}
+.ex-item{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.same-item{
+    display: flex;
+    border: 1px solid #2c0264;
+    border-radius: 7px;
+}
+
+#state{
+    border: none;
+}
+.btn-update{
+    border: none;
+    background-color: #270d44;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    font-weight: 700;
+}
+.info-item{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    margin-left: 10px;
+}
+.pro-item{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.pro{
+    padding-left: 10px;
+}
+.check{
+    background-color: rgb(111, 255, 0);
+    color: #fff;
+    border-radius: 100%;
+    margin-left: 10px;
+
+}
+.user-item1{
+    font-size: 40px;
+    background-color: rgba(192, 192, 192, 0.485);
+    border-radius: 100%;
+    color: #fff;
+    
+}
+.profile-button{
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+    border: none;
+    border-radius: 15px;
+    margin: 5px 0px;
+    padding: 8px;
+
+}
+.fa-arrow-left{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.details{
+    border-bottom: 1px solid rgba(173, 171, 171, 0.378);
+}
+.num8{
+    width: 100%;
+    color: #fff;
+    background-color: rgb(255, 225, 0);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.last-item{
+    font-size: 10px;
+    color: silver;
+    text-align: end;
+}
+.last-item1{
+    font-size: 10px;
+    color: silver;
+    text-align: end;
+}
+.missing-item{
+    color: red;
+}
+.sub-resume-item{
+    font-size: 16px;
+    color: rgb(82, 79, 79);
+}
+.color-item{
+    color: black;
+    text-decoration: none;
+}
+.sub-resume{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.418);
+}
+.upload-resume{
+    border: 2px dashed #4805a0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+.btn-upload{
+    background-color: #4805a0;
+    padding: 8px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    align-items: center !important;
+}
+.support{
+    font-size: 12px;
+    color: silver;
+}
+.resume-add-item{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.fa-pen-to-square{
+    color: rgb(4, 4, 4);
+}
+.resume-headline{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.418);
+}
+.headline{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 3px 10px rgb(221, 219, 219);
+}
+.skill-item{
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+}
+.plus{
+    font-size: 22px;
+    color: #4805a0;
+    font-weight: 700;
+}
+.right-item{
+    border-right: 2px solid rgba(162, 161, 161, 0.592);
+}
+.company{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(106, 104, 104);
+}
+.btn-close{
+    align-self: flex-end;
+    color: black;
+    background-color: #ffffff;
+    padding: 7px;
+    margin: -13px;
+    border-radius: 100%;
+}
+.resumeitem{
+    color: #4805a0;
+    text-align: start !important;
+}
+.textarea{
+    border-radius: 15px;
+    padding: 10px;
+}
+.savechanges{
+    border: none;
+    background-color: #4805a0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 175px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.savechanges:hover{
+    background: linear-gradient(to right, #5e4df7, #37037c);
+    box-shadow: 0px 5px 10px rgb(125, 124, 124);
+}
+.modal {
+    background-color:black;
+}
+.skill_button_item{
+    padding: 8px;
+    background-color: #7d72df;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    color: #fff;
+    font-weight: 400;
+}
+.skill_button_item:hover{
+    background: linear-gradient(to right, #7769f5, #4805a0);
+    box-shadow: 0px 5px 10px rgb(125, 124, 124);
+    
+}
+.employement_details{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(109, 109, 109);
+    padding: 3px;
+}
+.exp_details{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(40, 40, 40);
+}
+.input_type_text{
+    border: 1px solid black !important;
+    border-radius: 10px !important;
+}
+.accomplishment_list{
+    border-bottom: 2px solid rgb(185, 183, 183);
+}
+.resume_input{
+    border: 1px solid black !important;
+}
+.deleteIcon{
+    color: rgb(1, 1, 1);
+}
+input[type = date]:focus{
+    color: #212529;
+    background-color:none;
+    border-color:none;
+    box-shadow: none;
+    
+  
+}
+.user_img{
+    border-radius: 50%;
+    width: 100%;
+    height: 150px;
+}
+.user_img1{
+    border-radius: 50%;
+    width: 270px;
+    height: 250px;
+}
+.css-rh82gz-DropDown {
+    width: 100% !important;
+}
+.css-ivgmtg-DropDown {
+    width: 100% !important;
+}
+.b_item{
+    display: flex;
+    justify-content: center;
+}
+.resume_path{
+    font-size: 17px;
+    font-weight: 500;
+}
